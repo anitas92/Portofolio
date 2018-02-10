@@ -6,21 +6,23 @@
   font-size: 100%;
 }
 
+
 body {
   
-  background-image:url('https://myfloor.hu/image/cache/tapeta/Times/42111-30_20150122_1904741667-600x600.jpg');
+  background-image:url('5.jpg') ;
+   background-size: auto;
   align-items: center;
+  font-size: 20px;
   
+}
+div.clear{
+  clear: both;
 }
 
 /* Header syles */
 
-/*header{
-  width: 100vw;
-  
-}*/
 img {
-  width: 7rem;
+  width: 7.5rem;
   height: 8rem;
   border-radius: 50%;
   padding: 1px;
@@ -28,6 +30,7 @@ img {
   filter: grayscale(90%);
   display: inline;
   margin-bottom: .2rem;
+  //*float: left; *//
   
 }
 
@@ -42,35 +45,39 @@ img {
   
     
 }
+a{
+  text-decoration: none;
+  font-weight: 700;
+}
+ul.nav li a {
+  display: block;
+  
+  text-align:center;
+  color: bisque;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  padding:.5rem 1rem;
+  }
 
-.img-nav{
+li.img-nav{
   text-align: center;
   display: block;
   text-decoration: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 
 /* Navigation styles */
 
 nav {
-  position: relative;
-  background-color:rgba(0,0,4,.85);
+ 
+  background:url(1.jpg);
+  background-size: cover;
   padding:1rem; 
 }
-.normal-nav {
-  display: block;
-  text-decoration: none;
-  text-align:center;
-  color: bisque;
-  font-family: 'Lato';
-  font-size: 1.5rem;
-  padding:.5rem 1rem;
- 
 
-}
-nav a:hover {
-  color: #bbb;
+ul.nav li a:hover {
+  color: burlywood;
   transition: background-color .3s ease-in-out;
 }
 
@@ -78,30 +85,53 @@ nav a:hover {
 
 /* Mains SYLES */
 main.content{
- background-color: hsla(0, 0%, 100%, .5);
+ background-color: rgba(186, 186, 186,0.63);
   border-radius: 4px;
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
-  max-width:45rem;
-  height: 25rem;
+  max-width:50rem;
+  max-height: 35rem;
+  font-family:  "Josefin Slab";
+  padding: 2rem 1.5rem;
+}
+main h1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 1.5rem;
   
-  margin:2rem, 2rem, 2rem, 2rem;
 }
 
+ul.list li {
+  display: block;
+  
+  padding: 1rem 0 0.5rem 1rem;
+}
+ul.list li a{
+ color:black;
+  
+}
+ul.list li a:hover{
+  color: darkgoldenrod;
+}
 /* Footer style */
 
-.footer-wrapper {
 
+
+footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 6rem;
+  
+  height: 5rem;
   padding: 1rem;
   color: bisque;
   font-family: "Josefin Slab";
   font-size: 1.125rem;
-  position: absolute;
-  bottom: :0;
-  left: 0;
   text-align: center;
   background-color:rgba(0,0,4,.85);
+  
 }
 
 
@@ -109,15 +139,19 @@ main.content{
 @media (min-width: 768px) {
 
   nav {
-    position: fixed;
+ position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    margin:0 2rem 0 0;
   }
-   .img-nav, .normal-nav {
+  ul li{
+    display: inline;
+  }
+   .img-nav, ul.nav li a {
     float: left;
   }
-  .normal-nav{
+  ul.nav li a {
     margin:8rem 4rem 1rem 4rem;
   }
 
@@ -127,17 +161,23 @@ main.content{
   
   main.content {
     
-    margin-top: 15.5rem;
+    margin-top:15.5rem;
     margin-bottom: 1rem;
   }
+  footer {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  }
  
- /* Clearfix */
+ /* Clearfix 
   
     nav::after {
     content: "";
     clear: both;
     display: block;
-  }
+  }*/
   body {
     width: 60%;
     margin: 5.25rem auto 1.25rem;

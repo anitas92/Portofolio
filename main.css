@@ -45,7 +45,7 @@ img {
   
     
 }
-a{
+a {
   text-decoration: none;
   font-weight: 700;
 }
@@ -89,9 +89,13 @@ main.content{
   border-radius: 4px;
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
   max-width:50rem;
-  max-height: 35rem;
+  height: auto;
   font-family:  "Josefin Slab";
   padding: 2rem 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  
 }
 main h1{
   font-size: 25px;
@@ -114,6 +118,24 @@ ul.list li a{
 ul.list li a:hover{
   color: darkgoldenrod;
 }
+.row{
+  text-align: center;
+}
+a.fa{
+  color:dimgrey;
+  font-size: 30px;
+  
+}
+a.fa:hover{
+  color: darkgoldenrod;
+  transform: scale(1.1);
+}
+.mail{
+  color:dimgrey;
+}
+.mail:hover{
+  color: darkgoldenrod;
+}
 /* Footer style */
 
 
@@ -123,7 +145,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  
+ 
   height: 5rem;
   padding: 1rem;
   color: bisque;
@@ -145,6 +167,7 @@ footer {
     width: 100%;
     margin:0 2rem 0 0;
   }
+
   ul li{
     display: inline;
   }
@@ -162,22 +185,16 @@ footer {
   main.content {
     
     margin-top:15.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
   }
   footer {
   position:absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+
   }
  
- /* Clearfix 
-  
-    nav::after {
-    content: "";
-    clear: both;
-    display: block;
-  }*/
   body {
     width: 60%;
     margin: 5.25rem auto 1.25rem;

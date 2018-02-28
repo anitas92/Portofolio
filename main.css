@@ -9,7 +9,7 @@
 
 body {
   
-  background-image:url('5.jpg') ;
+  background-image:url('pic/5.jpg') ;
   font-size: 20px;
   background-size: auto;
 }
@@ -70,7 +70,7 @@ li.img-nav{
 
 nav {
  
-  background:url(1.jpg);
+  background:url(pic/1.jpg);
   background-size: cover;
   padding:1rem; 
 }
